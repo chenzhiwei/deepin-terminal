@@ -1653,7 +1653,7 @@ inline void MainWindow::slotShortcutBuiltinPaste()
     qDebug() << "built in paste shortcut is activated!" << QKEYSEQUENCE_PASTE_BUILTIN;
     TermWidgetPage *page = currentPage();
     if (page) {
-        page->pasteClipboard();
+        page->pasteSelection();
     }
 }
 
